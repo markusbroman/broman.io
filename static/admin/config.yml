@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - label: "Content"
+    name: "content"
+    files:
+    - label: "Site Info"
+      name: "info"
+      format: 'json'
+      file: "content/general/info.json"
+      fields:
+        - {label: Site Name, name: sitename, widget: string}
+        - {label: Site Description, name: sitedescription, widget: string}
+        - {label: Site Author, name: siteauthor, widget: string}
+        - label: Menu Links
+          name: menu
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Position, name: position, widget: string}
+            - {label: Link, name: link, widget: string}
+    - label: "About"
+      name: "about"
+      format: 'json'
+      file: "content/about.json"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Body, name: body, widget: markdown}
+    - label: "Work"
+      name: "work"
+      format: 'json'
+      file: "content/work.json"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Body, name: body, widget: markdown}
+    - label: "Connect"
+      name: "connect"
+      format: 'json'
+      file: "content/general/connect.json"
+      fields:
+        - label: 'Links'
+          name: 'connectlinks'
+          widget: 'list'
+          fields:
+            - {label: Link Name, name: name, widget: string}
+            - {label: URL, name: url, widget: string}

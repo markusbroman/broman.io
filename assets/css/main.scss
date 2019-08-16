@@ -1,0 +1,68 @@
+:root {
+
+  --font-size: calc(16px + 0.25vw);
+
+  --color-black: #151515;
+  --color-white: #ffffff;
+
+  --color-1: #e6fb04;
+  --color-2: #ff6600;
+  --color-3: #33ff00;
+  --color-4: #0033ff;
+  --color-5: #cc00ff;
+  --color-6: #9900ff;
+}
+
+html {
+  @apply font-sans leading-tight;
+  font-size: var(--font-size);
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  @apply text-4xl font-bold;
+}
+
+p {
+  @apply my-4;
+}
+
+main {
+  ol,ul {
+    @apply pl-4;
+  }
+
+  ul {
+    list-style: none;
+    li::before {
+      content: "\2022";
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em
+    }
+  }
+
+  $colors: (--color-1, --color-2, --color-3, --color-4);
+  @for $i from 1 through length($colors) {
+    ul li:nth-of-type(4n+#{$i}) {
+      &:before {
+        color: var(nth($colors, $i));
+      }
+    }
+  }
+}

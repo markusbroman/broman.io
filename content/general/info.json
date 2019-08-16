@@ -1,0 +1,22 @@
+{
+  "sitename": "broman.io",
+  "sitedescription": "My awe-inspiring Nuxt.js project",
+  "siteauthor": "Markus Broman",
+  "menu": [
+    {
+      "name": "Home",
+      "position": "1",
+      "link": "/"
+    },
+    {
+      "name": "About",
+      "position": "2",
+      "link": "/about"
+    },
+    {
+      "name": "Work",
+      "position": "3",
+      "link": "/work"
+    }
+  ]
+}
