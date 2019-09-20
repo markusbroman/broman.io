@@ -1,4 +1,4 @@
-# broman.io
+# [broman.io](https://broman.io)
 
 > My awe-inspiring Nuxt.js project
 
