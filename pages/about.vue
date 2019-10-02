@@ -10,11 +10,11 @@
 <script>
 export default {
   computed: {
-    aboutPage() {
+    aboutPage () {
       return this.$store.state.aboutPage
     }
   },
-  head() {
+  head () {
     return {
       title: `${this.aboutPage.title} | ${this.$store.state.siteInfo.sitename}`
     }

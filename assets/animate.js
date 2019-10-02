@@ -1,6 +1,6 @@
 import anime from 'animejs'
 
-export function logoAnimation(logoPaths) {
+export function logoAnimation (logoPaths) {
   const StartUpTimeline = anime.timeline({
     autoplay: true
   })
@@ -9,7 +9,7 @@ export function logoAnimation(logoPaths) {
     targets: logoPaths,
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeOutQuart',
-    delay(el, i) {
+    delay (el, i) {
       return i * 100
     },
     opacity: 1,
@@ -18,7 +18,7 @@ export function logoAnimation(logoPaths) {
   })
 }
 
-export function globalAnimation(menu, footer) {
+export function globalAnimation (menu, footer) {
   const StartUpTimeline = anime.timeline({
     autoplay: true
   })
@@ -40,7 +40,7 @@ export function globalAnimation(menu, footer) {
   })
 }
 
-export function swiperAnimation(swiper) {
+export function swiperAnimation (swiper) {
   const StartUpTimeline = anime.timeline({
     autoplay: true
   })

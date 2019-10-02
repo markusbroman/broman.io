@@ -83,7 +83,7 @@
 <script>
 import { logoAnimation } from '~/assets/animate'
 export default {
-  mounted() {
+  mounted () {
     const logoPaths = document.querySelectorAll('#logo path, #logo polygon')
     logoAnimation(logoPaths)
   }

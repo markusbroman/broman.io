@@ -21,20 +21,20 @@
 import { globalAnimation } from '~/assets/animate'
 
 export default {
-  data: function () {
+  data () {
     return {
       innerHeight: '100vh'
     }
   },
   computed: {
-    siteInfo() {
+    siteInfo () {
       return this.$store.state.siteInfo
     },
-    footer() {
+    footer () {
       return `© ${new Date().getFullYear()} ${this.$store.state.siteInfo.siteauthor}`
     }
   },
-  mounted() {
+  mounted () {
     const menu = document.querySelectorAll('.menu')
     const footer = document.querySelectorAll('.footer')
     globalAnimation(menu, footer)
@@ -43,7 +43,7 @@ export default {
     this.getWindowHeight()
   },
   methods: {
-    getWindowHeight(event) {
+    getWindowHeight (event) {
       this.innerHeight = window.innerHeight
     }
   }

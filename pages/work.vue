@@ -10,11 +10,11 @@
 <script>
 export default {
   computed: {
-    workPage() {
+    workPage () {
       return this.$store.state.workPage
     }
   },
-  head() {
+  head () {
     return {
       title: `${this.workPage.title} | ${this.$store.state.siteInfo.sitename}`
     }
