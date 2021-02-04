@@ -45,7 +45,8 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/eslint-module',
     '@nuxtjs/markdownit',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Axios module configuration
@@ -106,5 +107,8 @@ export default {
   css: [
     '~/assets/css/tailwind.css',
     '~/assets/css/main.scss'
-  ]
+  ],
+  googleAnalytics: {
+    id: 'UA-127975880-1'
+  }
 }
