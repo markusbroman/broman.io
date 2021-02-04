@@ -14,8 +14,12 @@
 }
 
 ::selection {
-  background: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  @media (prefers-color-scheme: dark) {
+    background: var(--color-white);
+    color: var(--color-black);
+  }
 }
 
 html {
@@ -27,9 +31,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
   overflow-x: hidden;
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
 }
 
 *,

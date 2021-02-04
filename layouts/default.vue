@@ -6,7 +6,7 @@
     <nav class="self-start">
       <ul class="menu flex list-reset opacity-0">
         <li v-for="(c,i) in siteInfo.menu" v-show="siteInfo" :key="i" :class="i === 0 ? 'pl-0 pr-3' : 'px-3'">
-          <nuxt-link class="text-white no-underline link" :to="c.link" v-text="c.name" />
+          <nuxt-link class="no-underline link" :to="c.link" v-text="c.name" />
         </li>
       </ul>
     </nav>

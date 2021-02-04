@@ -93,23 +93,41 @@ export default {
 <style lang="scss" scoped>
 .letter-1,
 .letter-7 {
-  stroke: var(--color-1);
+  stroke: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-1);
+  }
 }
 .letter-2,
 .letter-8 {
-  stroke: var(--color-2);
+  stroke: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-2);
+  }
 }
 .letter-3,
 .letter-9 {
-  stroke: var(--color-3);
+  stroke: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-3);
+  }
 }
 .letter-4 {
-  stroke: var(--color-4);
+  stroke: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-4);
+  }
 }
 .letter-5 {
-  stroke: var(--color-5);
+  stroke: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-5);
+  }
 }
 .letter-6 {
-  stroke: var(--color-6);
+  stroke: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-6);
+  }
 }
 </style>
