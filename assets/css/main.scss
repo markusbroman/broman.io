@@ -55,6 +55,13 @@ p {
   @apply my-4;
 }
 
+a {
+  color: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-white);
+  }
+}
+
 main {
   ol,ul {
     @apply pl-4;
