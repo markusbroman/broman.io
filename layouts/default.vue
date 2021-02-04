@@ -53,6 +53,10 @@ export default {
 <style lang="scss" scoped>
 .link {
   position: relative;
+  color: var(--color-black);
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-white);
+  }
   &:after {
     content: '';
     position: absolute;
