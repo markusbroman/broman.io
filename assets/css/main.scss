@@ -13,6 +13,11 @@
   --color-6: #9900ff;
 }
 
+::selection {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
 html {
   @apply font-sans leading-tight;
   font-size: var(--font-size);
