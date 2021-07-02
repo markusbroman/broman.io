@@ -6,14 +6,14 @@
     <nav class="self-start">
       <ul class="menu flex list-reset opacity-0">
         <li v-for="(c,i) in siteInfo.menu" v-show="siteInfo" :key="i" :class="i === 0 ? 'pl-0 pr-3' : 'px-3'">
-          <nuxt-link class="no-underline link" :to="c.link" v-text="c.name" />
+          <nuxt-link :to="c.link" v-text="c.name" class="no-underline link" />
         </li>
       </ul>
     </nav>
     <main class="flex-1">
       <nuxt />
     </main>
-    <footer class="footer self-end opacity-0" v-text="footer" />
+    <footer v-text="footer" class="footer self-end opacity-0" />
   </div>
 </template>
 

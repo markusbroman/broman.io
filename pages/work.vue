@@ -1,8 +1,8 @@
 <template>
   <article class="flex flex-col items-center mt-content">
     <div
-      class="w-640 max-w-full"
       v-html="$md.render(workPage.body)"
+      class="w-640 max-w-full"
     />
   </article>
 </template>

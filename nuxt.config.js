@@ -12,7 +12,6 @@ class TailwindExtractor {
 process.noDeprecation = true
 
 export default {
-  mode: 'universal',
   /*
   ** Headers of the page
   */

@@ -91,8 +91,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.letter-1,
-.letter-7 {
+.letter-1 {
   stroke: var(--color-black);
   @media (prefers-color-scheme: dark) {
     stroke: var(--color-1);
@@ -128,6 +127,12 @@ export default {
   stroke: var(--color-black);
   @media (prefers-color-scheme: dark) {
     stroke: var(--color-6);
+  }
+}
+.letter-7 {
+  stroke: var(--color-2);
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-1);
   }
 }
 </style>
