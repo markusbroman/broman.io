@@ -36,7 +36,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "fibers": "^4.0.3",
     "glob-all": "^3.2.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.19.4",
     "purgecss-webpack-plugin": "^1.6.0",
     "sass": "^1.26.8",
